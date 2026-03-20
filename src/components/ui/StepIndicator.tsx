@@ -13,7 +13,7 @@ export const StepIndicator: React.FC<StepIndicatorProps> = ({ currentStep, total
   return (
     <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
       <div
-        className="bg-blue-600 h-full transition-all duration-500 ease-in-out"
+        className="bg-primary h-full transition-all duration-500 ease-in-out"
         style={{ width: `${progress}%` }}
       />
     </div>

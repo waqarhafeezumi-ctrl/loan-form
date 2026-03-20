@@ -111,17 +111,17 @@ export const LoanForm: React.FC = () => {
 
   if (isSuccess) {
     return (
-      <div className="w-full max-w-lg mx-auto p-8 bg-white rounded-2xl shadow-xl text-center">
+      <div className="w-full max-w-lg mx-auto p-8 bg-white rounded-2xl shadow-xl text-center border-t-4 border-accent">
         <div className="flex justify-center mb-6">
-          <div className="rounded-full bg-green-100 p-4">
-            <CheckCircle2 className="w-16 h-16 text-green-600" />
+          <div className="rounded-full bg-accent/10 p-4">
+            <CheckCircle2 className="w-16 h-16 text-accent" />
           </div>
         </div>
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Application Received!</h2>
         <p className="text-gray-600 mb-8 text-lg">
           Thank you for applying. One of our loan specialists will review your information and contact you shortly to discuss your funding options.
         </p>
-        <Button onClick={() => window.location.reload()} className="w-full">
+        <Button onClick={() => window.location.reload()} className="w-full bg-accent hover:bg-accent/90 text-white">
           Start New Application
         </Button>
       </div>
@@ -144,7 +144,7 @@ export const LoanForm: React.FC = () => {
       <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden relative min-h-[400px]">
         {/* Header */}
         <div className="bg-gray-50 border-b border-gray-100 p-6 flex items-center gap-4">
-          <div className="p-3 bg-blue-100 rounded-lg text-blue-600">
+          <div className="p-3 bg-primary/10 rounded-lg text-primary">
             <CurrentIcon className="w-6 h-6" />
           </div>
           <div>
@@ -183,16 +183,16 @@ export const LoanForm: React.FC = () => {
                             className={`
                               cursor-pointer p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group
                               ${field.value === option 
-                                ? "border-blue-600 bg-blue-50 shadow-sm" 
-                                : "border-gray-200 hover:border-blue-300 hover:shadow-md bg-white"}
+                                ? "border-primary bg-primary/5 shadow-sm" 
+                                : "border-gray-200 hover:border-primary/50 hover:shadow-md bg-white"}
                             `}
                           >
-                            <span className={`font-medium ${field.value === option ? "text-blue-700" : "text-gray-700"}`}>
+                            <span className={`font-medium ${field.value === option ? "text-primary" : "text-gray-700"}`}>
                               {option}
                             </span>
                             <div className={`
                               w-5 h-5 rounded-full border flex items-center justify-center
-                              ${field.value === option ? "border-blue-600 bg-blue-600" : "border-gray-300 group-hover:border-blue-400"}
+                              ${field.value === option ? "border-primary bg-primary" : "border-gray-300 group-hover:border-primary/70"}
                             `}>
                               {field.value === option && <div className="w-2 h-2 rounded-full bg-white" />}
                             </div>
@@ -223,16 +223,16 @@ export const LoanForm: React.FC = () => {
                             className={`
                               cursor-pointer p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group
                               ${field.value === option 
-                                ? "border-blue-600 bg-blue-50 shadow-sm" 
-                                : "border-gray-200 hover:border-blue-300 hover:shadow-md bg-white"}
+                                ? "border-primary bg-primary/5 shadow-sm" 
+                                : "border-gray-200 hover:border-primary/50 hover:shadow-md bg-white"}
                             `}
                           >
-                            <span className={`font-medium ${field.value === option ? "text-blue-700" : "text-gray-700"}`}>
+                            <span className={`font-medium ${field.value === option ? "text-primary" : "text-gray-700"}`}>
                               {option}
                             </span>
                             <div className={`
                               w-5 h-5 rounded-full border flex items-center justify-center
-                              ${field.value === option ? "border-blue-600 bg-blue-600" : "border-gray-300 group-hover:border-blue-400"}
+                              ${field.value === option ? "border-primary bg-primary" : "border-gray-300 group-hover:border-primary/70"}
                             `}>
                               {field.value === option && <div className="w-2 h-2 rounded-full bg-white" />}
                             </div>
@@ -263,16 +263,16 @@ export const LoanForm: React.FC = () => {
                             className={`
                               cursor-pointer p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group
                               ${field.value === option 
-                                ? "border-blue-600 bg-blue-50 shadow-sm" 
-                                : "border-gray-200 hover:border-blue-300 hover:shadow-md bg-white"}
+                                ? "border-primary bg-primary/5 shadow-sm" 
+                                : "border-gray-200 hover:border-primary/50 hover:shadow-md bg-white"}
                             `}
                           >
-                            <span className={`font-medium ${field.value === option ? "text-blue-700" : "text-gray-700"}`}>
+                            <span className={`font-medium ${field.value === option ? "text-primary" : "text-gray-700"}`}>
                               {option}
                             </span>
                             <div className={`
                               w-5 h-5 rounded-full border flex items-center justify-center
-                              ${field.value === option ? "border-blue-600 bg-blue-600" : "border-gray-300 group-hover:border-blue-400"}
+                              ${field.value === option ? "border-primary bg-primary" : "border-gray-300 group-hover:border-primary/70"}
                             `}>
                               {field.value === option && <div className="w-2 h-2 rounded-full bg-white" />}
                             </div>
@@ -303,16 +303,16 @@ export const LoanForm: React.FC = () => {
                             className={`
                               cursor-pointer p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group
                               ${field.value === option 
-                                ? "border-blue-600 bg-blue-50 shadow-sm" 
-                                : "border-gray-200 hover:border-blue-300 hover:shadow-md bg-white"}
+                                ? "border-primary bg-primary/5 shadow-sm" 
+                                : "border-gray-200 hover:border-primary/50 hover:shadow-md bg-white"}
                             `}
                           >
-                            <span className={`font-medium ${field.value === option ? "text-blue-700" : "text-gray-700"}`}>
+                            <span className={`font-medium ${field.value === option ? "text-primary" : "text-gray-700"}`}>
                               {option}
                             </span>
                             <div className={`
                               w-5 h-5 rounded-full border flex items-center justify-center
-                              ${field.value === option ? "border-blue-600 bg-blue-600" : "border-gray-300 group-hover:border-blue-400"}
+                              ${field.value === option ? "border-primary bg-primary" : "border-gray-300 group-hover:border-primary/70"}
                             `}>
                               {field.value === option && <div className="w-2 h-2 rounded-full bg-white" />}
                             </div>
@@ -348,16 +348,16 @@ export const LoanForm: React.FC = () => {
                             className={`
                               cursor-pointer p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group
                               ${field.value === option.value 
-                                ? "border-blue-600 bg-blue-50 shadow-sm" 
-                                : "border-gray-200 hover:border-blue-300 hover:shadow-md bg-white"}
+                                ? "border-primary bg-primary/5 shadow-sm" 
+                                : "border-gray-200 hover:border-primary/50 hover:shadow-md bg-white"}
                             `}
                           >
-                            <span className={`font-medium ${field.value === option.value ? "text-blue-700" : "text-gray-700"}`}>
+                            <span className={`font-medium ${field.value === option.value ? "text-primary" : "text-gray-700"}`}>
                               {option.label}
                             </span>
                             <div className={`
                               w-5 h-5 rounded-full border flex items-center justify-center
-                              ${field.value === option.value ? "border-blue-600 bg-blue-600" : "border-gray-300 group-hover:border-blue-400"}
+                              ${field.value === option.value ? "border-primary bg-primary" : "border-gray-300 group-hover:border-primary/70"}
                             `}>
                               {field.value === option.value && <div className="w-2 h-2 rounded-full bg-white" />}
                             </div>
@@ -444,20 +444,12 @@ export const LoanForm: React.FC = () => {
             <Button
               onClick={nextStep}
               isLoading={isSubmitting}
-              className="bg-green-600 hover:bg-green-700 text-white px-8"
+              className="bg-accent hover:bg-accent/90 text-white px-8"
             >
               See My Options
               <ChevronRight className="w-4 h-4 ml-2" />
             </Button>
           ) : (
-            // Hidden "Next" button for steps that auto-advance, but good to have for accessibility or if auto-advance is disabled
-             // Actually, for steps with options, I auto-advance. But for text inputs (step 5), I need a submit button.
-             // Wait, step 5 is the last step.
-             // For steps 0-4, they are selection based. I auto-advance in the selection handler.
-             // However, maybe I should keep a "Next" button just in case? 
-             // The design above uses auto-advance for options.
-             // So this button is mostly redundant for steps 0-4 unless I want to allow validating without selection (which I don't).
-             // I'll hide it for steps 0-4 to reduce clutter, as users tap the option to proceed.
              <div /> 
           )}
         </div>

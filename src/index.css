@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #1e3a8a; /* Navy Blue */
+  --color-primary-hover: #172554;
+  --color-accent: #10b981; /* Emerald Green */
+  --color-accent-hover: #059669;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
